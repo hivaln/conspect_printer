@@ -1,5 +1,5 @@
 def print_pages(num_pages):
-    pages = list(range(1, num_pages + 1)) + [None] * (4 - num_pages % 4) if num_pages % 4 != 0 else []
+    pages = list(range(1, num_pages + 1)) + ([None] * (4 - num_pages % 4) if num_pages % 4 != 0 else [])
 
     print(f"{'Лист':<10}{'Back':<10}{'Front':<10}")
     print("-" * 30)
